@@ -1,0 +1,42 @@
+name: Risk Item (ISO 14971)
+description: Log a hazard and risk controls
+title: "Risk: <short description>"
+labels: ["artifact:risk"]
+
+body:
+  - type: input
+    id: risk-id
+    attributes:
+      label: Risk ID
+      placeholder: R-12
+    validations:
+      required: true
+
+  - type: textarea
+    id: hazard
+    attributes:
+      label: Hazard / hazardous situation
+    validations:
+      required: true
+
+  - type: textarea
+    id: harm
+    attributes:
+      label: Potential harm
+    validations:
+      required: true
+
+  - type: textarea
+    id: controls
+    attributes:
+      label: Risk controls
+      description: Design, protective, or information-for-safety measures
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: Risk status
+      options:
+        - open
+        - mitigated
+        - closed
