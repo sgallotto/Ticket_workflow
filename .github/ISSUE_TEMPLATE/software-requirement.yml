@@ -1,0 +1,40 @@
+name: Software Requirement (SRS)
+description: Create a compliant software requirement
+title: "SRS: <short title>"
+labels: ["artifact:requirement"]
+
+body:
+  - type: input
+    id: req-id
+    attributes:
+      label: Requirement ID
+      placeholder: SRS-101
+    validations:
+      required: true
+
+  - type: textarea
+    id: requirement-text
+    attributes:
+      label: Requirement text
+      description: State the requirement in clear, verifiable terms.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: safety-class
+    attributes:
+      label: IEC 62304 Safety Class
+      options:
+        - A
+        - B
+        - C
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance criteria
+      description: Measurable, objective, pass/fail criteria.
+    validations:
+      required: true
