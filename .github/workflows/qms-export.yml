@@ -1,0 +1,30 @@
+name: QMS Export
+
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Extract QMS record
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_LABELS: ${{ join(github.event.issue.labels.*.name, ',') }}
+          ISSUE_URL: ${{ github.event.issue.html_url }}
+        run: |
+          node scripts/extract-qms-record.js
+
+      - name: Commit QMS records
+        run: |
+          git config user.name "qms-bot"
+          git config user.email "qms-bot@users.noreply.github.com"
+          git add qms/records
+          git commit -m "QMS export issue #${{ github.event.issue.number }}" || true
+          git push
