@@ -6,10 +6,10 @@
       "artifact:requirement"
     ],
     "url": "https://github.com/sgallotto/Ticket_workflow/issues/3",
-    "extracted_at": "2026-04-08T23:05:02.048Z"
+    "extracted_at": "2026-04-08T23:46:38.011Z"
   },
   "data": {
-    "requirement_text": "The system needs to pass criteria",
+    "requirement_text": "The system needs to pass criteria.",
     "iec_62304_safety_class": "B",
     "acceptance_criteria": "pass/fail"
   }
