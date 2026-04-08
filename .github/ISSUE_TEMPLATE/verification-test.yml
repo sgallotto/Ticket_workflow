@@ -1,0 +1,35 @@
+name: Verification Test
+description: Define a verification test case
+title: "TEST: <SRS-ID> - <short description>"
+labels: ["artifact:test"]
+
+body:
+  - type: input
+    id: test-id
+    attributes:
+      label: Test ID
+      placeholder: T-09
+    validations:
+      required: true
+
+  - type: input
+    id: traces
+    attributes:
+      label: Traces to SRS ID(s)
+      placeholder: SRS-101
+    validations:
+      required: true
+
+  - type: textarea
+    id: procedure
+    attributes:
+      label: Test procedure
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
