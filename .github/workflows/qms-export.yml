@@ -20,6 +20,10 @@ jobs:
           ISSUE_URL: ${{ github.event.issue.html_url }}
         run: |
           node scripts/extract-qms-record.js
+          
+      - name: Build traceability matrix
+        run: |
+          node scripts/build-traceability.js
 
       - name: Commit QMS records
         run: |
