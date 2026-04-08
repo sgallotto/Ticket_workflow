@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "issue_number": "2",
+    "title": "SRS: SRStest",
+    "labels": [
+      "artifact:requirement"
+    ],
+    "url": "https://github.com/sgallotto/Ticket_workflow/issues/2",
+    "extracted_at": "2026-04-08T23:01:53.553Z"
+  },
+  "data": {
+    "requirement_text": "The system shall log user authentication failures",
+    "iec_62304_safety_class": "B",
+    "acceptance_criteria": "deterministic pass/fail"
+  }
+}
