@@ -24,11 +24,15 @@ jobs:
       - name: Build traceability matrix
         run: |
           node scripts/build-traceability.js
+          
+      - name: Build SRS document
+        run: |
+          node scripts/build-srs.js
 
       - name: Commit QMS records
         run: |
           git config user.name "qms-bot"
           git config user.email "qms-bot@users.noreply.github.com"
-          git add qms/records qms/traceability.csv
+          git add qms/records qms/traceability.csv docs
           git commit -m "QMS export issue #${{ github.event.issue.number }}" || true
           git push
