@@ -37,6 +37,10 @@ jobs:
         run: |
           node scripts/build-verification-report.js
 
+      - name: Build DHF Index
+        run: |
+          node scripts/build-dhf-index.js
+
       - name: Commit QMS records
         run: |
           git config user.name "qms-bot"
