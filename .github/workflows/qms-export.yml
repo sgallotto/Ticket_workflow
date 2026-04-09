@@ -41,6 +41,10 @@ jobs:
         run: |
           node scripts/build-dhf-index.js
 
+      - name: Build Design Review Minutes
+        run: |
+          node scripts/build-design-reviews.js
+
       - name: Export DHF to PDF and Word
         run: |
           sudo apt-get update
