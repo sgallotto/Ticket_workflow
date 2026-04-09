@@ -7,7 +7,8 @@ const fs = require("fs");
 
 function extractFields(markdown) {
   const out = {};
-  const blocks = markdown.split("\n### ").slice(1);
+  const normalized = markdown.replace(/^### /, "\n### ");
+  const blocks = normalized.split("\n### ").slice(1);
 
   for (const block of blocks) {
     const [header, ...rest] = block.split("\n");
