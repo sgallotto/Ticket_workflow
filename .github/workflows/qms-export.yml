@@ -41,6 +41,18 @@ jobs:
         run: |
           node scripts/build-dhf-index.js
 
+      - name: Export DHF to PDF and Word
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc
+          pandoc docs/DHF-Index.md \
+            docs/SRS.md \
+            docs/Risk-Management-Log.md \
+            docs/Verification-Report.md \
+            qms/traceability.csv \
+            -o docs/DHF.pdf
+          pandoc docs/DHF-Index.md -o docs/DHF.docx
+
       - name: Check release readiness
         if: startsWith(github.ref, 'refs/tags/')
         run: |
