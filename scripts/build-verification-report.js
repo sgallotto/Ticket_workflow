@@ -26,21 +26,44 @@ function main() {
   let md = `# Verification Report\n\n`;
   md += `_Generated automatically. Do not edit manually._\n\n`;
 
-  for (const t of tests) {
-    const id = t.data.test_id;
-    if (!id) continue;
+for (const t of tests) {
+  // --- Validation (fail loudly) ---
+  requireField(t.data,"test_id",`Test issue #${t.meta.issue_number}`);
+  requireField(t.data,"procedure",`Test ${t.data.test_id}`);
+  requireField(t.data,"expected",`Test ${t.data.test_id}`);
 
-    md += `## ${id}\n\n`;
-    md += `**Traces to Requirement(s)**\n\n`;
-    md += `${t.data.traces || t.data.traces_to_srs_id_s}\n\n`;
+  // Accept either field name (defensive)
+  const traces =
+    t.data.traces_to_srs_id_s ||
+    t.data.traces ||
+    "NOT TRACEABLE";
 
-    md += `**Test Procedure**\n\n`;
-    md += `${t.data.procedure}\n\n`;
-
-    md += `**Expected Result**\n\n`;
-    md += `${t.data.expected}\n\n`;
-    md += `---\n\n`;
+  if (traces === "NOT TRACEABLE") {
+    throw new Error(
+      `Missing SRS traceability for test ${t.data.test_id}`
+    );
   }
+
+  // --- Data extraction ---
+  const id = t.data.test_id;
+  const procedure = t.data.procedure;
+  const expected = t.data.expected;
+
+  // --- Document rendering ---
+  md += `## ${id}\n\n`;
+
+  md += `**Traces to Requirement(s)**\n\n`;
+  md += `${traces}\n\n`;
+
+  md += `**Test Procedure**\n\n`;
+  md += `${procedure}\n\n`;
+
+  md += `**Expected Result**\n\n`;
+  md += `${expected}\n\n`;
+
+  md += `---\n\n`;
+}
+``
 
   fs.mkdirSync("docs", { recursive: true });
   fs.writeFileSync(OUTPUT_FILE, md);
