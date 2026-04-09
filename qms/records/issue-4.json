@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "issue_number": "4",
+    "title": "Risk: Invalid user input",
+    "labels": [
+      "artifact:risk"
+    ],
+    "url": "https://github.com/sgallotto/Ticket_workflow/issues/4",
+    "extracted_at": "2026-04-09T14:35:17.108Z"
+  },
+  "data": {
+    "risk_id": "R-001",
+    "hazard_hazardous_situation": "Invalid user input could be processed without validation, leading to incorrect system behavior.",
+    "potential_harm": "Incorrect output or system malfunction affecting the user.",
+    "risk_controls": "Input validation implemented as specified in requirement SRS-002.",
+    "risk_status": "open"
+  }
+}
