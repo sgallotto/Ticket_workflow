@@ -13,7 +13,14 @@ const OUTPUT_FILE = "docs/Risk-Management-Log.md";
 function loadRecords() {
   return fs.readdirSync(RECORDS_DIR)
     .filter(f => f.endsWith(".json"))
-    .map(f => JSON.parse(fs.readFileSync(path.join(REORDS_DIR = RECORDS_DIR, f))));
+    .map(f =>
+      JSON.parse(
+        fs.readFileSync(
+          path.join(RECORDS_DIR, f),
+          "utf-8"
+        )
+      )
+    );
 }
 
 function main() {
