@@ -33,7 +33,7 @@ function main() {
   md += `_Generated automatically. Do not edit manually._\n\n`;
 
   for (const r of risks) {
-    /* ---------- HARD VALIDATION ---------- */
+    /* ---------- VALIDATION ---------- */
 
     requireField(
       r.data,
@@ -41,7 +41,6 @@ function main() {
       `Risk issue #${r.meta.issue_number}`
     );
 
-    // Accept both canonical and rendered-heading keys
     const hazard =
       r.data.hazard ||
       r.data.hazard_hazardous_situation;
@@ -52,42 +51,3 @@ function main() {
       );
     }
 
-    requireField(
-      r.data,
-      "harm",
-      `Risk ${r.data.risk_id}`
-    );
-
-    /* ---------- DATA EXTRACTION ---------- */
-
-    const id = r.data.risk_id;
-    const harm = r.data.harm;
-    const controls = r.data.controls || "Not yet defined";
-    const status = r.data.status || "unspecified";
-
-    /* ---------- DOCUMENT RENDERING ---------- */
-
-    md += `## ${id}\n\n`;
-
-    md += `**Hazard / Hazardous Situation**\n\n`;
-    md += `${hazard}\n\n`;
-
-    md += `**Potential Harm**\n\n`;
-    md += `${harm}\n\n`;
-
-    md += `**Risk Controls**\n\n`;
-    md += `${controls}\n\n`;
-
-    md += `**Risk Status**\n\n`;
-    md += `${status}\n\n`;
-
-    md += `---\n\n`;
-  }
-
-  fs.mkdirSync("docs", { recursive: true });
-  fs.writeFileSync(OUTPUT_FILE, md);
-
-  console.log(`Risk Management Log generated at ${OUTPUT_FILE}`);
-}
-
-main();
