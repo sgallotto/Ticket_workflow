@@ -29,11 +29,11 @@ function main() {
     (r) => r.meta.labels && r.meta.labels.includes("artifact:risk")
   );
 
-  let md = `# Risk Management Log (ISO 14971)\n\n`;
-  md += `_Generated automatically. Do not edit manually._\n\n`;
+  let md = "# Risk Management Log (ISO 14971)\n\n";
+  md += "_Generated automatically. Do not edit manually._\n\n";
 
   for (const r of risks) {
-    /* ---------- VALIDATION ---------- */
+    // ----- REQUIRED VALIDATION -----
 
     requireField(
       r.data,
@@ -51,3 +51,45 @@ function main() {
       );
     }
 
+    const harm =
+      r.data.harm ||
+      r.data.potential_harm;
+
+    if (!harm) {
+      throw new Error(
+        `Missing required field 'harm' in Risk ${r.data.risk_id}`
+      );
+    }
+
+    // ----- DATA EXTRACTION -----
+
+    const id = r.data.risk_id;
+    const controls = r.data.controls || "Not yet defined";
+    const status = r.data.status || "unspecified";
+
+    // ----- DOCUMENT RENDERING -----
+
+    md += `## ${id}\n\n`;
+
+    md += "**Hazard / Hazardous Situation**\n\n";
+    md += `${hazard}\n\n`;
+
+    md += "**Potential Harm**\n\n";
+    md += `${harm}\n\n`;
+
+    md += "**Risk Controls**\n\n";
+    md += `${controls}\n\n`;
+
+    md += "**Risk Status**\n\n";
+    md += `${status}\n\n`;
+
+    md += "---\n\n";
+  }
+
+  fs.mkdirSync("docs", { recursive: true });
+  fs.writeFileSync(OUTPUT_FILE, md);
+
+  console.log(`Risk Management Log generated at ${OUTPUT_FILE}`);
+}
+
+main();
