@@ -22,3 +22,23 @@ unspecified
 
 ---
 
+## R-001
+
+**Hazard / Hazardous Situation**
+
+Invalid user input may be processed by the system.
+
+**Potential Harm**
+
+Incorrect system behavior or output.
+
+**Risk Controls**
+
+Not yet defined
+
+**Risk Status**
+
+unspecified
+
+---
+

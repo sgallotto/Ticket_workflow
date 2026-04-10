@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "issue_number": "8",
+    "title": "Risk: 001",
+    "labels": [
+      "artifact:risk"
+    ],
+    "url": "https://github.com/sgallotto/Ticket_workflow/issues/8",
+    "extracted_at": "2026-04-10T21:22:26.214Z"
+  },
+  "data": {
+    "risk_id": "R-001",
+    "hazard_hazardous_situation": "Invalid user input may be processed by the system.",
+    "potential_harm": "Incorrect system behavior or output.",
+    "risk_controls": "Input validation implemented according to requirement SRS-001.",
+    "risk_status": "open"
+  }
+}
