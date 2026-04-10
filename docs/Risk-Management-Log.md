@@ -6,11 +6,11 @@ _Generated automatically. Do not edit manually._
 
 **Hazard / Hazardous Situation**
 
-undefined
+Invalid user input could be processed without validation, leading to incorrect system behavior.
 
 **Potential Harm**
 
-undefined
+Incorrect output or system malfunction affecting the user.
 
 **Risk Controls**
 
@@ -18,7 +18,7 @@ Not yet defined
 
 **Risk Status**
 
-undefined
+unspecified
 
 ---
 

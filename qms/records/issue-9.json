@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "issue_number": "9",
+    "title": "TEST: SRS-001",
+    "labels": [
+      "artifact:test"
+    ],
+    "url": "https://github.com/sgallotto/Ticket_workflow/issues/9",
+    "extracted_at": "2026-04-10T21:04:20.682Z"
+  },
+  "data": {
+    "test_id": "T-001",
+    "traces_to_srs_id_s": "SRS-001",
+    "test_procedure": "1. Provide invalid input to the system.\n2. Observe system response. \n3. Provide valid input.",
+    "expected_result": "- Invalid input is rejected.\n- Valid input is accepted and processed."
+  }
+}

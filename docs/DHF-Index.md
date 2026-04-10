@@ -8,10 +8,6 @@ _Generated automatically. Contents listed below._
 - [Risk Management Log](Risk-Management-Log.md)
 - [Verification Report](Verification-Report.md)
 - [Traceability Matrix](../qms/traceability.csv)
-  
-## Governing Procedures
-
-- SOP-GitHub-QMS.md – Software Design Control Process
 
 ## Notes
 
