@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "issue_number": "12",
+    "title": "TEST-002",
+    "labels": [
+      "artifact:test"
+    ],
+    "url": "https://github.com/sgallotto/Ticket_workflow/issues/12",
+    "extracted_at": "2026-04-10T21:37:11.855Z"
+  },
+  "data": {
+    "test_id": "T-002",
+    "traces_to_srs_id_s": "SRS-002",
+    "test_procedure": "Provide invalid input to the system.\nObserve system response.\nProvide valid input.",
+    "expected_result": "The 12-lead completes within 30 seconds"
+  }
+}

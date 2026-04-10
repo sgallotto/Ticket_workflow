@@ -2,6 +2,24 @@
 
 _Generated automatically. Do not edit manually._
 
+## T-002
+
+**Traces to Requirement(s)**
+
+SRS-002
+
+**Test Procedure**
+
+Provide invalid input to the system.
+Observe system response.
+Provide valid input.
+
+**Expected Result**
+
+The 12-lead completes within 30 seconds
+
+---
+
 ## T-001
 
 **Traces to Requirement(s)**
