@@ -47,9 +47,11 @@ jobs:
 
       - name: Export DHF to PDF and Word
         run: |
+          set -e
           sudo apt-get update
-          sudo apt-get install -y pandoc
-          pandoc docs/DHF-Index.md \
+          sudo apt-get install -y pandoc texlive-latex-base
+          pandoc \
+            docs/DHF-Index.md \
             docs/SRS.md \
             docs/Risk-Management-Log.md \
             docs/Verification-Report.md \
