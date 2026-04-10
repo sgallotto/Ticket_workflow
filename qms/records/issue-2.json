@@ -9,6 +9,7 @@
     "extracted_at": "2026-04-08T23:01:53.553Z"
   },
   "data": {
+    "requirement_id": "SRS-002",
     "requirement_text": "The system shall log user authentication failures",
     "iec_62304_safety_class": "B",
     "acceptance_criteria": "deterministic pass/fail"
