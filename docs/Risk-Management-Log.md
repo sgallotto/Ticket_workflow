@@ -2,6 +2,26 @@
 
 _Generated automatically. Do not edit manually._
 
+## R-002
+
+**Hazard / Hazardous Situation**
+
+12-lead does not fishing within 30 seconds
+
+**Potential Harm**
+
+The system crashes
+
+**Risk Controls**
+
+Not yet defined
+
+**Risk Status**
+
+unspecified
+
+---
+
 ## R-001
 
 **Hazard / Hazardous Situation**

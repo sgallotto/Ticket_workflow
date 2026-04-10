@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "issue_number": "11",
+    "title": "Risk-002",
+    "labels": [
+      "artifact:risk"
+    ],
+    "url": "https://github.com/sgallotto/Ticket_workflow/issues/11",
+    "extracted_at": "2026-04-10T21:36:09.148Z"
+  },
+  "data": {
+    "risk_id": "R-002",
+    "hazard_hazardous_situation": "12-lead does not fishing within 30 seconds",
+    "potential_harm": "The system crashes",
+    "risk_controls": "At 15 seconds send an alarm",
+    "risk_status": "open"
+  }
+}
