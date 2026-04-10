@@ -6,6 +6,7 @@
 
 const fs = require("fs");
 const path = require("path");
+const { requireField } = require("./validate-record");
 
 const RECORDS_DIR = "qms/records";
 const OUTPUT_FILE = "docs/Risk-Management-Log.md";
