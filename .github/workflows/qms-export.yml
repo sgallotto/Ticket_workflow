@@ -6,6 +6,15 @@ on:
 
 jobs:
   export:
+    
+    if: |
+      github.event.issue &&
+      (
+        contains(github.event.issue.labels.*.name, 'artifact:requirement') ||
+        contains(github.event.issue.labels.*.name, 'artifact:risk') ||
+        contains(github.event.issue.labels.*.name, 'artifact:test')
+      )
+
     runs-on: ubuntu-latest
 
     steps:
