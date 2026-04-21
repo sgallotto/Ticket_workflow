@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "issue_number": "19",
+    "title": "Risk: 100",
+    "labels": [
+      "artifact:risk"
+    ],
+    "url": "https://github.com/sgallotto/Ticket_workflow/issues/19",
+    "extracted_at": "2026-04-21T23:36:45.027Z"
+  },
+  "data": {
+    "risk_id": "R-100",
+    "hazard_hazardous_situation": "The leads become too hot",
+    "potential_harm": "The patient gets burnt",
+    "risk_controls": "_No response_",
+    "risk_status": "open"
+  }
+}

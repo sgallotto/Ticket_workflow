@@ -22,6 +22,26 @@ unspecified
 
 ---
 
+## R-100
+
+**Hazard / Hazardous Situation**
+
+The leads become too hot
+
+**Potential Harm**
+
+The patient gets burnt
+
+**Risk Controls**
+
+Not yet defined
+
+**Risk Status**
+
+unspecified
+
+---
+
 ## R-001
 
 **Hazard / Hazardous Situation**
