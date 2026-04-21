@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "issue_number": "20",
+    "title": "TEST: 100",
+    "labels": [
+      "artifact:test"
+    ],
+    "url": "https://github.com/sgallotto/Ticket_workflow/issues/20",
+    "extracted_at": "2026-04-21T23:39:11.569Z"
+  },
+  "data": {
+    "test_id": "T-100",
+    "traces_to_srs_id_s": "SRS-100",
+    "test_procedure": "Measure the time to complete the procedure and the temperature it reaches within that time.",
+    "expected_result": "The procedure takes <= 30 seconds and the temperature does not increase above 15 degrees throughout the process"
+  }
+}

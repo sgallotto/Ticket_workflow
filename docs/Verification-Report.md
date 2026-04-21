@@ -20,6 +20,22 @@ The 12-lead completes within 30 seconds
 
 ---
 
+## T-100
+
+**Traces to Requirement(s)**
+
+SRS-100
+
+**Test Procedure**
+
+Measure the time to complete the procedure and the temperature it reaches within that time.
+
+**Expected Result**
+
+The procedure takes <= 30 seconds and the temperature does not increase above 15 degrees throughout the process
+
+---
+
 ## T-001
 
 **Traces to Requirement(s)**
