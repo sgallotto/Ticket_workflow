@@ -32,7 +32,7 @@ Measure the time to complete the procedure and the temperature it reaches within
 
 **Expected Result**
 
-The procedure takes <= 30 seconds and the temperature does not increase above 15 degrees throughout the process
+The procedure takes less than 30 seconds and the temperature does not increase above 15 degrees throughout the process
 
 ---
 
