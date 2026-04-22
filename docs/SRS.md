@@ -2,6 +2,24 @@
 
 _Generated automatically. Do not edit manually._
 
+## SRS-100
+
+**Requirement text**
+
+12-lead
+
+**IEC 62304 Safety Class**
+
+A
+
+**Acceptance criteria**
+
+1:  filter
+2: module
+3: module throws an error
+
+---
+
 ## SRS-002
 
 **Requirement text**

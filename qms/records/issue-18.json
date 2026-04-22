@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "issue_number": "18",
+    "title": "SRS: 100",
+    "labels": [
+      "artifact:requirement"
+    ],
+    "url": "https://github.com/sgallotto/Ticket_workflow/issues/18",
+    "extracted_at": "2026-04-22T00:25:27.938Z"
+  },
+  "data": {
+    "requirement_id": "SRS-100",
+    "requirement_text": "12-lead",
+    "iec_62304_safety_class": "A",
+    "acceptance_criteria": "1:  filter\n2: module\n3: module throws an error"
+  }
+}
