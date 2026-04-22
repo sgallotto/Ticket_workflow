@@ -52,3 +52,21 @@ pass/fail
 
 ---
 
+## SRS-001
+
+**Requirement text**
+
+The system shall reject any user input that does not conform to the defined input format.
+
+**IEC 62304 Safety Class**
+
+B
+
+**Acceptance criteria**
+
+- Invalid input is rejected with an error message.
+- No processing occurs on invalid input.
+- Valid input continues to be processed normally.
+
+---
+

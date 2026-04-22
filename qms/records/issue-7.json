@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "issue_number": "7",
+    "title": "SRS: 001",
+    "labels": [
+      "artifact:requirement"
+    ],
+    "url": "https://github.com/sgallotto/Ticket_workflow/issues/7",
+    "extracted_at": "2026-04-22T02:20:27.413Z"
+  },
+  "data": {
+    "requirement_id": "SRS-001",
+    "requirement_text": "The system shall reject any user input that does not conform to the defined input format.",
+    "iec_62304_safety_class": "B",
+    "acceptance_criteria": "- Invalid input is rejected with an error message.\n- No processing occurs on invalid input.\n- Valid input continues to be processed normally."
+  }
+}
