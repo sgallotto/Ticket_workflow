@@ -16,7 +16,8 @@ Provide valid input.
 
 **Expected Result**
 
-The 12-lead completes within 30 seconds
+The 12-lead completes within 30 seconds  
+Hi Rui
 
 ---
 

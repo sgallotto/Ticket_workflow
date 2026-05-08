@@ -6,12 +6,12 @@
       "artifact:test"
     ],
     "url": "https://github.com/sgallotto/Ticket_workflow/issues/12",
-    "extracted_at": "2026-05-08T16:33:49.144Z"
+    "extracted_at": "2026-05-08T16:35:39.373Z"
   },
   "data": {
     "test_id": "T-002",
     "traces_to_srs_id_s": "SRS-002",
     "test_procedure": "Provide invalid input to the system.\nObserve system response.\nProvide valid input.",
-    "expected_result": "The 12-lead completes within 30 seconds"
+    "expected_result": "The 12-lead completes within 30 seconds  \nHi Rui"
   }
 }
