@@ -17,7 +17,6 @@ Provide valid input.
 **Expected Result**
 
 The 12-lead completes within 30 seconds  
-Hi Rui
 
 <img width="543" height="281" alt="Image" src="https://github.com/user-attachments/assets/6994c346-0c0d-4c83-951f-b54eb626da40" />
 
